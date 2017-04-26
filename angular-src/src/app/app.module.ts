@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { router } from "./app.routes"
+import { ValidateService } from "./services/validate.service"
+import { FlashMessagesModule } from "angular2-flash-messages"
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -26,9 +28,10 @@ import { ProfileComponent } from './components/profile/profile.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    router
+    router,
+    FlashMessagesModule
   ],
-  providers: [],
+  providers: [ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
