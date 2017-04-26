@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { router } from "./app.routes"
 import { ValidateService } from "./services/validate.service"
 import { FlashMessagesModule } from "angular2-flash-messages"
+import { AuthService } from "./services/auth.service"
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -31,7 +32,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     router,
     FlashMessagesModule
   ],
-  providers: [ValidateService],
+  providers: [ValidateService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
