@@ -473,7 +473,7 @@ var AuthService = (function () {
         this.user = user;
     };
     AuthService.prototype.loadToken = function () {
-        var token = localStorage.getItem('id_token');
+        var token = localStorage.getItem('token');
         this.authToken = token;
     };
     AuthService.prototype.loggedIn = function () {

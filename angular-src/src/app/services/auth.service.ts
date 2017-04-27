@@ -42,7 +42,7 @@ export class AuthService {
   }
 
   loadToken() {
-    const token = localStorage.getItem('id_token')
+    const token = localStorage.getItem('token')
     this.authToken = token
   }
 
